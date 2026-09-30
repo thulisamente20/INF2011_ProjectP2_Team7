@@ -22,6 +22,7 @@ namespace INF2011_ProjectP2_Team7
         private void Form1_Load(object sender, EventArgs e)
         {
             Console.WriteLine("hello world");
+            //Last test
         }
     }
 }
