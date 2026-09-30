@@ -15,6 +15,7 @@ namespace INF2011_ProjectP2_Team7
         public Form1()
         {
             InitializeComponent();
+            //Kofi
         }
     }
 }
