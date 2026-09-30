@@ -18,5 +18,10 @@ namespace INF2011_ProjectP2_Team7
             //Kofi
             //Thuli
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Console.WriteLine("hello world");
+        }
     }
 }
