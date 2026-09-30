@@ -15,6 +15,8 @@ namespace INF2011_ProjectP2_Team7
         public Form1()
         {
             InitializeComponent();
+            //Kofi
+            //Thuli
         }
 
         private void Form1_Load(object sender, EventArgs e)
