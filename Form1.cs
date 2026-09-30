@@ -16,6 +16,7 @@ namespace INF2011_ProjectP2_Team7
         {
             InitializeComponent();
             //Kofi
+            //Thuli
         }
     }
 }
