@@ -122,10 +122,10 @@ namespace INF2011_ProjectP2_Team7
         {
 
             // Store the answers on the learner object
-            learner.Responses.Clear();
+            learner.InterestResponses.Clear();
             for (int i = 0; i < answers.Length; i++)
             {
-                learner.Responses.Add(new LearnerInterestResponse
+                learner.InterestResponses.Add(new LearnerInterestResponse
                 {
                     QuestionID = i + 1,
                     ResponseValue = answers[i]
@@ -133,7 +133,7 @@ namespace INF2011_ProjectP2_Team7
             }
 
             // TEMPORARY until the faculty/degree selection form exists
-            MessageBox.Show("Answers saved: " + learner.Responses.Count, "Temporary");
+            MessageBox.Show("Answers saved: " + learner.InterestResponses.Count, "Temporary");
         }
 
         private void btnBack_Click(object sender, EventArgs e)

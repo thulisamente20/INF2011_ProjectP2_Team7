@@ -14,7 +14,7 @@ namespace INF2011_ProjectP2_Team7.Models
         public string Province { get; set; }
         public string ContactDetails { get; set; }
         public List<LearnerSubject> Subjects { get; set; } = new List<LearnerSubject>();
-        public List<LearnerInterestResponse> Responses { get; set; } = new List<LearnerInterestResponse>();
+        public List<LearnerInterestResponse> InterestResponses { get; set; } = new List<LearnerInterestResponse>();
     }
 }
 
