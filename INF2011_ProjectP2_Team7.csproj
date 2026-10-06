@@ -46,16 +46,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboardForm.Designer.cs">
+      <DependentUpon>AdminDashboardForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageDegreesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageDegreesForm.Designer.cs">
+      <DependentUpon>ManageDegreesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageFacultiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageFacultiesForm.Designer.cs">
+      <DependentUpon>ManageFacultiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageFundingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageFundingForm.Designer.cs">
+      <DependentUpon>ManageFundingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSubjectsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSubjectsForm.Designer.cs">
+      <DependentUpon>ManageSubjectsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminDashboardForm.resx">
+      <DependentUpon>AdminDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageDegreesForm.resx">
+      <DependentUpon>ManageDegreesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageFacultiesForm.resx">
+      <DependentUpon>ManageFacultiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageFundingForm.resx">
+      <DependentUpon>ManageFundingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSubjectsForm.resx">
+      <DependentUpon>ManageSubjectsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +132,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FuturePath.Business\FuturePath.Business.csproj">
+      <Project>{f9657b43-f01c-47eb-8a28-239bfd713756}</Project>
+      <Name>FuturePath.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FuturePath.DataAccess\FuturePath.DataAccess.csproj">
+      <Project>{744fa6a1-e4f0-4360-a031-f4bcbdaf8068}</Project>
+      <Name>FuturePath.DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

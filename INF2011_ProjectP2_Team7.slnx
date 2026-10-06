@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="../FuturePath.Business/FuturePath.Business.csproj" Id="f9657b43-f01c-47eb-8a28-239bfd713756" />
+  <Project Path="../FuturePath.DataAccess/FuturePath.DataAccess.csproj" Id="744fa6a1-e4f0-4360-a031-f4bcbdaf8068" />
   <Project Path="INF2011_ProjectP2_Team7.csproj" Id="b7e9f524-c42c-4fc5-994b-77113d7967ef" />
 </Solution>
