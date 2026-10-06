@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FuturePath.Business;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,12 +11,30 @@ using System.Windows.Forms;
 
 namespace INF2011_ProjectP2_Team7
 {
-    public partial class Form1 : Form
+    public partial class LoadDegreesButton : Form
     {
-        public Form1()
+        private FacultyController facultyController = new FacultyController();
+        private DegreeProgrammeController degreeController = new DegreeProgrammeController();
+        public LoadDegreesButton()
         {
             InitializeComponent();
-            //Kofi
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // This satisfies the designer event hookup
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Call the business layer to get data and bind it to your DataGridView
+            dataGridView1.DataSource = facultyController.GetFaculties();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            StudentController studentController = new StudentController();
+            dataGridView1.DataSource = studentController.GetStudents();
         }
     }
 }

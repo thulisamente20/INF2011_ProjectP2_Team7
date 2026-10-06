@@ -1,6 +1,6 @@
 ﻿namespace INF2011_ProjectP2_Team7
 {
-    partial class Form1
+    partial class LoadDegreesButton
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.LoadFacultiesButton = new System.Windows.Forms.Button();
+            this.LoadDegrees = new System.Windows.Forms.Button();
+            this.LoadStudentsLabel = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(47, 22);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(497, 234);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 285);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // LoadFacultiesButton
+            // 
+            this.LoadFacultiesButton.Location = new System.Drawing.Point(93, 285);
+            this.LoadFacultiesButton.Name = "LoadFacultiesButton";
+            this.LoadFacultiesButton.Size = new System.Drawing.Size(136, 23);
+            this.LoadFacultiesButton.TabIndex = 2;
+            this.LoadFacultiesButton.Text = "Load Faculties";
+            this.LoadFacultiesButton.UseVisualStyleBackColor = true;
+            // 
+            // LoadDegrees
+            // 
+            this.LoadDegrees.Location = new System.Drawing.Point(258, 285);
+            this.LoadDegrees.Name = "LoadDegrees";
+            this.LoadDegrees.Size = new System.Drawing.Size(133, 23);
+            this.LoadDegrees.TabIndex = 3;
+            this.LoadDegrees.Text = "Load Degrees";
+            this.LoadDegrees.UseVisualStyleBackColor = true;
+            // 
+            // LoadStudentsLabel
+            // 
+            this.LoadStudentsLabel.Location = new System.Drawing.Point(421, 285);
+            this.LoadStudentsLabel.Name = "LoadStudentsLabel";
+            this.LoadStudentsLabel.Size = new System.Drawing.Size(140, 23);
+            this.LoadStudentsLabel.TabIndex = 4;
+            this.LoadStudentsLabel.Text = "Load Students";
+            this.LoadStudentsLabel.UseVisualStyleBackColor = true;
+            // 
+            // LoadDegreesButton
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.LoadStudentsLabel);
+            this.Controls.Add(this.LoadDegrees);
+            this.Controls.Add(this.LoadFacultiesButton);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "LoadDegreesButton";
+            this.Text = "Load Degrees";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button LoadFacultiesButton;
+        private System.Windows.Forms.Button LoadDegrees;
+        private System.Windows.Forms.Button LoadStudentsLabel;
     }
 }
 
